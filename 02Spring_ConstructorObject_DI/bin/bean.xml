@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+	<bean class="com.cdac.spring.constructor.Address" id="a">
+		<constructor-arg >
+			<value>Akola</value>
+		</constructor-arg> 
+		<constructor-arg >
+			<value>Maharashtra</value>
+		</constructor-arg> 
+		<constructor-arg >
+			<value>India</value>
+		</constructor-arg>
+		 
+	</bean>
+	<bean class="com.cdac.spring.constructor.Employee" id="employee">
+		<constructor-arg >
+			<value>1001</value>
+		</constructor-arg> 
+		<constructor-arg >
+			<value>Roshan</value>
+		</constructor-arg>
+		<constructor-arg >
+			<value>Ingle</value>
+		</constructor-arg>
+		<constructor-arg ref="a"></constructor-arg> 
+		 
+	</bean>
+	
+	
+  
+</beans> 
